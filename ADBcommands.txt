@@ -93,7 +93,8 @@ fastboot getvar cid							- displays CID (Carrier ID) of the device
 
 adb root								- restarts the adbd daemon with root permissions
 
-am start -n com.package.name/com.package.name.ActivityName		- run an Android package
+pip install monkey:
+monkey -p com.package.name -c android.intent.category.LAUNCHER 1  	- run an Android package
 
 am start -a android.intent.action.VIEW -d				- open browser
 
